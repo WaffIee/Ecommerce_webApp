@@ -5,12 +5,14 @@ const {createUser, FindUser , deleteUser, fetchallusers,editUser} =require("../C
 const router=express.Router();
 
 
-
+//Users
 router.post('/register',createUser);
 router.get('/users',fetchallusers);
 router.get('/finduser/:_id',FindUser);
 router.delete('/delete/:_id',deleteUser);
 router.put('/edit/:_id',editUser);
+
+
 
 
 module.exports=router;
